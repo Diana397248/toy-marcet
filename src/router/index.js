@@ -22,11 +22,7 @@ import Catalog from "../pages/catalog/Catalog.vue";
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-        {
-            path: "/",
-            name: "MainPage",
-            component: Posts,
-        },
+
         {
             path: "/products",
             name: "Products",
@@ -107,16 +103,6 @@ const router = createRouter({
         },
 
 
-
-
-
-
-
-
-
-
-
-
         {
             path: "/register",
             name: "Register",
@@ -130,6 +116,11 @@ const router = createRouter({
         {
             path: "/catalog",
             name: "Catalog",
+            component: Catalog,
+        },
+        {
+            path: "/",
+            name: "MainPage",
             component: Catalog,
         },
     ],
