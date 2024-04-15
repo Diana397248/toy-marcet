@@ -2,7 +2,7 @@
   <header class="desktop">
     <div class="d-flex flex-column flex-md-row align-items-center">
       <router-link
-          :to="{ name: 'Posts' }"
+          :to="{ name: 'Catalog' }"
           class="d-flex align-items-center text-dark text-decoration-none"
       >
         <img :src="imgLogo" class="fs-4 py-2"/>
@@ -14,12 +14,12 @@
         >
           Главная
         </router-link>
-<!--        <router-link-->
-<!--            :to="{ name: 'Chats' }"-->
-<!--            class="me-8 py-2  text-decoration-none fs-4 fw-bold"-->
-<!--        >-->
-<!--          О нас-->
-<!--        </router-link>-->
+        <!--        <router-link-->
+        <!--            :to="{ name: 'Chats' }"-->
+        <!--            class="me-8 py-2  text-decoration-none fs-4 fw-bold"-->
+        <!--        >-->
+        <!--          О нас-->
+        <!--        </router-link>-->
       </nav>
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto align-center">
         <template v-if="store.isAuth && !store.isAdmin">
